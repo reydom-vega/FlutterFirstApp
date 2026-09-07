@@ -56,14 +56,20 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
 
       body: Center(
-        child:Column(
+        child:
+        Column(
         mainAxisAlignment: MainAxisAlignment.center,
         
         children: [
-          Text('ABOUT ME'),
+          Image.network(
+          'assets/images/vega.png',
+          width: 50,
+          height: 50,
+          fit: BoxFit.cover,
 
           SizedBox(height: 50),
-          
+
+          Text('ABOUT ME'),
           Text('Name: Vega, ReyDominic M.'),
           Text('Age: 22'),
           Text('Birthdate: May 7, 2004'),
@@ -79,7 +85,9 @@ class SecondScreen extends StatelessWidget {
               );
             },
              child: Text('MY SKILLS'),
+        
           ),
+         ),
         ],
       ),
     )
